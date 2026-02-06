@@ -24,24 +24,6 @@
             flex-direction: column;
         }
 
-        .header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 15px 30px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .header h1 {
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-
-        .header p {
-            font-size: 14px;
-            color: #ecf0f1;
-        }
-
         .dashboard-wrapper {
             flex: 1;
             position: relative;
@@ -83,25 +65,14 @@
 
         /* Mobile responsiveness */
         @media (max-width: 768px) {
-            .header h1 {
-                font-size: 20px;
-            }
-            .header p {
-                font-size: 12px;
-            }
-            .header {
-                padding: 12px 20px;
+            body {
+                overflow: auto;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Visual Analytics Dashboard</h1>
-            <p>BDMA Program 2024/25 - Personal Data Visualization Project</p>
-        </div>
-        
         <div class="dashboard-wrapper">
             <div class="loading" id="loadingIndicator">
                 <div class="loading-spinner"></div>
